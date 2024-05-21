@@ -68,3 +68,7 @@ function openDetails(details) {
 function closeDetails(details) {
 	if (details == null) return
 	details.classList.remove('active')
+	overlay.classList.remove('active')
+	document.body.classList.remove('no-scroll');
+
+}
