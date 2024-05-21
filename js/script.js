@@ -31,4 +31,40 @@ for (const item of dropDowns) {
 	};
 	item.addEventListener('click', onClick);
 }
-                                
+          
+const openDetailsButton = document.querySelectorAll('[data-detail]');
+const closeDetailsButton = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
+
+openDetailsButton.forEach(button => {
+	button.addEventListener('click', () => {
+		const details = document.querySelector(button.dataset.detail)
+		openDetails(details)
+	})
+})
+
+overlay.addEventListener('click', () => {
+	const details = document.querySelectorAll('.details.active')
+	details.forEach(details => {
+		closeDetails(details)
+	})
+})
+
+closeDetailsButton.forEach(button => {
+	button.addEventListener('click', () => {
+		const details = button.closest('.details')
+		closeDetails(details)
+	})
+})
+
+function openDetails(details) {
+	if (details == null) return
+	details.classList.add('active')
+	overlay.classList.add('active')
+	document.body.classList.add('no-scroll');
+
+}
+
+function closeDetails(details) {
+	if (details == null) return
+	details.classList.remove('active')

@@ -26,6 +26,7 @@ body {
   /* prevents padding from affecting height and width */
   box-sizing: border-box;
 }
+
 .cs-topper {
   font-size: var(--topperFontSize);
   line-height: 1.2em;
@@ -37,6 +38,11 @@ body {
   margin-bottom: 0.25rem;
   display: block;
 }
+
+.no-scroll {
+  overflow: hidden;
+}
+
 
 .cs-title {
   font-size: var(--headerFontSize);
@@ -76,7 +82,7 @@ body {
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
-    z-index: 10000;
+    z-index: 9;
   }
   #cs-navigation:before {
     content: "";
@@ -299,6 +305,7 @@ body {
   }
   #cs-navigation .cs-button-solid {
     display: none;
+    border-radius: 0.25rem;
   }
 }
 /*-- -------------------------- -->
@@ -522,6 +529,7 @@ body {
       min-width: 9.375rem;
       padding: 0 2rem;
       background-color: var(--primary);
+      border-radius: 0.25rem;
       display: inline-block;
       position: relative;
       z-index: 1;
@@ -539,6 +547,7 @@ body {
       top: 0;
       left: 0;
       z-index: -1;
+      border-radius: 0.25rem;
       transition: width 0.3s;
   }
   #hero-998 .cs-button-solid:hover {
@@ -675,6 +684,7 @@ body {
     min-width: 9.375rem;
     padding: 0 3rem;
     background-color: var(--primary);
+    border-radius: 0.25rem;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -692,6 +702,7 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+    border-radius: 0.25rem;
     transition: width .3s;
   }
   #promotions-1567 .cs-button-solid:hover {
@@ -839,6 +850,7 @@ body {
       min-width: 9.375rem;
       padding: 0 2rem;
       background-color: var(--primary);
+      border-radius: 0.25rem;
       display: inline-block;
       position: relative;
       z-index: 1;
@@ -856,6 +868,7 @@ body {
       top: 0;
       left: 0;
       z-index: -1;
+      border-radius: 0.25rem;
       transition: width 0.3s;
   }
   #menu-1001 .cs-button-solid:hover {
@@ -880,7 +893,7 @@ body {
       max-width: 36.25rem;
       margin: 0;
       display: flex;
-      justify-content: space-between;
+      justify-content: normal;
       align-items: center;
       /* 16px - 36px */
       gap: clamp(1rem, 3vw, 2.25rem);
@@ -902,6 +915,9 @@ body {
       width: 100%;
       /* makes it act like a background image */
       object-fit: cover;
+  }
+  #menu-1001 .cs-info {
+    width: 100%;
   }
   #menu-1001 .cs-h3 {
       /* 16px - 24px */
@@ -955,6 +971,85 @@ body {
       text-align: left;
       margin: 0;
       color: var(--bodyTextColor);
+  }
+  #menu-1001 .details {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: 300ms ease-in-out;
+      /* border: 1px solid #000; */
+      border: 10px solid red;
+      border-radius: 0.25rem;
+      z-index: 10;
+      background-color: #fff;
+      width: 500px;
+      height: 500px;
+      max-width: 100%;
+  }
+  #menu-1001 .details.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  #menu-1001 .details-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+  }
+  #menu-1001 .details-header .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  #menu-1001 .close {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  #menu-1001 .open-details-button{
+      font-size: 1rem;
+      /* 46px - 56px */
+      line-height: clamp(1.5em, 3.5vw, 2.5em);
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+      margin: auto;
+      color: #fff;
+      min-width: 9.375rem;
+      background-color: var(--primary);
+      border-radius: 0.25rem;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      /* prevents padding from adding to the width */
+      box-sizing: border-box;
+      border: none;
+  }
+
+  #menu-1001 .open-details-button:hover{
+    background-color: #4d0101;
+}
+  #menu-1001 .details-body {
+    padding: 10px 15px;
+  }
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 300ms ease-in-out;
+    background-color: rgb(184, 176, 176, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: 9;
+  }
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
   }
 }
 /* Tablet - 768px */
