@@ -1344,7 +1344,7 @@ body {
     font-weight: 700;
     line-height: 1.2em;
     text-decoration: none;
-    color: var(--headerColor);
+    color: var(--bodyTextColor);
   }
   #cs-footer-1763 .cs-header {
     /* 20px - 25px */
