@@ -62,6 +62,12 @@ function openDetails(details) {
 	details.classList.add('active')
 	overlay.classList.add('active')
 	document.body.classList.add('no-scroll');
+	
+	// Scroll to the menu section
+	const menuSection = document.getElementById('menu-1001');
+    if (menuSection) {
+        menuSection.scrollIntoView({ behavior: 'smooth' });
+    }
 
 }
 
