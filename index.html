@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>Document</title> -->
+
     <link href="css/style.css" type="text/css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,6 @@
     
     <link rel="icon" href="images/website-logo.png">
     <title>Home - Puckapunyal Pizza And Pasta</title>
-    <!-- <meta name="description" content="Monash has achieved an enviable national and international reputation for research and teaching excellence in a short 50 years."> -->
 
 </head>
 <body>
@@ -121,7 +120,6 @@
                 <div class="cs-content">
                     <span class="cs-tag">Pasta Special</span>
                     <h2 class="cs-h2">15% off on All Pasta</h2>
-                    <!-- <a href="" class="cs-button-solid">Read More</a> -->
                 </div>
             </li>
             <li class="cs-item">
@@ -135,7 +133,6 @@
                 <div class="cs-content">
                     <span class="cs-tag">Pizza Promotion</span>
                     <h2 class="cs-h2">Buy 1 Get 1 Free</h2>
-                    <!-- <a href="" class="cs-button-solid">Read More</a> -->
                 </div>
             </li>
         </ul>
@@ -169,17 +166,27 @@
                             $26
                         </span>
                     </h3>
-                    <!-- <p class="cs-item-p">
-                        Arugula, sun-dried tomatoes, mozzarella, artichokes, garlic, Parmesan, balsamic glaze
-                    </p> -->
                     <button data-detail="#details1" class="open-details-button">View Details</button>
                     <div class="details" id="details1">
                         <div class="details-header">
-                            <div class="title">Ingredients</div>
+                            <span class="title">Italian Style Pizza</span>
                             <button data-close-button class="close">&times;</button>
                         </div>
                         <div class="details-body">
-                            Arugula, sun-dried tomatoes, mozzarella, artichokes, garlic, Parmesan, balsamic glaze
+                            <picture class="cs-body-picture" aria-hidden="true">
+                                <source media="(max-width: 600px)" srcset="images/special01.jpg">
+                                <source media="(min-width: 601px)" srcset="images/special01.jpg">
+                                <img loading="lazy" decoding="async" src="images/special01.jpg" alt="food" width="160" height="160">
+                            </picture>
+                            <span class="cs-ingredients">
+                                Arugula, sun-dried tomatoes, mozzarella, artichokes, garlic, Parmesan, balsamic glaze
+                            </span>
+                            <span class="cs-alert">
+                                Vegetarian
+                            </span>
+                            <span class="details-price">
+                                $26
+                            </span>
                         </div>
                     </div>
                     <div id="overlay"></div>
@@ -198,17 +205,27 @@
                             $26
                         </span>
                     </h3>
-                    <!-- <p class="cs-item-p">
-                        Creamy spinach, marinated artichokes, melted mozzarella
-                    </p> -->
                     <button data-detail="#details2" class="open-details-button">View Details</button>
                     <div class="details" id="details2">
                         <div class="details-header">
-                            <div class="title">Ingredients</div>
+                            <span class="title">Spinach Artichoke Pizza</span>
                             <button data-close-button class="close">&times;</button>
                         </div>
                         <div class="details-body">
-                            Creamy spinach, marinated artichokes, melted mozzarella
+                            <picture class="cs-body-picture" aria-hidden="true">
+                                <source media="(max-width: 600px)" srcset="images/special02.jpg">
+                                <source media="(min-width: 601px)" srcset="images/special02.jpg">
+                                <img loading="lazy" decoding="async" src="images/special02.jpg" alt="food" width="160" height="160">
+                            </picture>
+                            <span class="cs-ingredients">
+                                Creamy spinach (dairy-free cream), marinated artichokes, dairy-free cheese
+                            </span>
+                            <span class="cs-alert">
+                                Vegetarian, Gluten-Free, Dairy-Free
+                            </span>
+                            <span class="details-price">
+                                $26
+                            </span>
                         </div>
                     </div>
                     <div id="overlay"></div>
@@ -227,46 +244,27 @@
                             $26
                         </span>
                     </h3>
-                    <!-- <p class="cs-item-p">
-                        San Marzano tomatoes, buffalo mozzarella, fresh basil
-                    </p> -->
                     <button data-detail="#details3" class="open-details-button">View Details</button>
                     <div class="details" id="details3">
                         <div class="details-header">
-                            <div class="title">Ingredients</div>
+                            <span class="title">Wood-fired Sourdough Pizza Margherita</span>
                             <button data-close-button class="close">&times;</button>
                         </div>
                         <div class="details-body">
-                            San Marzano tomatoes, buffalo mozzarella, fresh basil
-                        </div>
-                    </div>
-                    <div id="overlay"></div>
-                </div>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture"  aria-hidden="true">
-                    <source media="(max-width: 600px)" srcset="images/special05.jpg">
-                    <source media="(min-width: 601px)" srcset="images/special05.jpg">
-                    <img loading="lazy" decoding="async" src="images/special05.jpg" alt="food" width="160" height="160">
-                    </picture>
-                    <div class="cs-info">
-                    <h3 class="cs-h3">
-                        <span class="cs-name">Halloween Pizza</span>
-                        <span class="cs-price">
-                            $32
-                        </span>
-                    </h3>
-                    <!-- <p class="cs-item-p">
-                        Sinister spiderweb tomato sauce, ghostly mozzarella, eerie olive slices, sliced onions
-                    </p> -->
-                    <button data-detail="#details4" class="open-details-button">View Details</button>
-                    <div class="details" id="details4">
-                        <div class="details-header">
-                            <div class="title">Ingredients</div>
-                            <button data-close-button class="close">&times;</button>
-                        </div>
-                        <div class="details-body">
-                            Sinister spiderweb tomato sauce, ghostly mozzarella, eerie olive slices, sliced onions
+                            <picture class="cs-body-picture" aria-hidden="true">
+                                <source media="(max-width: 600px)" srcset="images/special03.jpg">
+                                <source media="(min-width: 601px)" srcset="images/special03.jpg">
+                                <img loading="lazy" decoding="async" src="images/special03.jpg" alt="food" width="160" height="160">
+                            </picture>
+                            <span class="cs-ingredients">
+                                San Marzano tomatoes, buffalo mozzarella, fresh basil
+                            </span>
+                            <span class="cs-alert">
+                                Vegetarian
+                            </span>
+                            <span class="details-price">
+                                $26
+                            </span>
                         </div>
                     </div>
                     <div id="overlay"></div>
@@ -280,22 +278,72 @@
                     </picture>
                     <div class="cs-info">
                     <h3 class="cs-h3">
+                        <span class="cs-name">Halloween Pizza</span>
+                        <span class="cs-price">
+                            $32
+                        </span>
+                    </h3>
+                    <button data-detail="#details4" class="open-details-button">View Details</button>
+                    <div class="details" id="details4">
+                        <div class="details-header">
+                            <span class="title">Halloween Pizza</span>
+                            <button data-close-button class="close">&times;</button>
+                        </div>
+                        <div class="details-body">
+                            <picture class="cs-body-picture" aria-hidden="true">
+                                <source media="(max-width: 600px)" srcset="images/special04.jpg">
+                                <source media="(min-width: 601px)" srcset="images/special04.jpg">
+                                <img loading="lazy" decoding="async" src="images/special04.jpg" alt="food" width="160" height="160">
+                            </picture>
+                
+                            <span class="cs-ingredients">
+                                Tomato sauce, vegan mozzarella, olive slices, sliced onions
+                            </span>
+                            <span class="cs-alert">
+                                Vegan, Dairy-Free
+                            </span>
+                            <span class="details-price">
+                                $32
+                            </span>
+                        </div>
+                    </div>
+                    <div id="overlay"></div>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="images/special05.jpg">
+                    <source media="(min-width: 601px)" srcset="images/special05.jpg">
+                    <img loading="lazy" decoding="async" src="images/special05.jpg" alt="food" width="160" height="160">
+                    </picture>
+                    <div class="cs-info">
+                    <h3 class="cs-h3">
                         <span class="cs-name">Classic Sourdough Pizza</span>
                         <span class="cs-price">
                             $26
                         </span>
                     </h3>
-                    <!-- <p class="cs-item-p">
-                        Tangy tomato sauce, stretchy mozzarella cheese, fresh basil
-                    </p> -->
                     <button data-detail="#details5" class="open-details-button">View Details</button>
                     <div class="details" id="details5">
                         <div class="details-header">
-                            <div class="title">Ingredients</div>
+                            <span class="title">Classic Sourdough Pizza</span>
                             <button data-close-button class="close">&times;</button>
                         </div>
                         <div class="details-body">
-                            Tangy tomato sauce, stretchy mozzarella cheese, fresh basil
+                            <picture class="cs-body-picture" aria-hidden="true">
+                                <source media="(max-width: 600px)" srcset="images/special05.jpg">
+                                <source media="(min-width: 601px)" srcset="images/special05.jpg">
+                                <img loading="lazy" decoding="async" src="images/special05.jpg" alt="food" width="160" height="160">
+                            </picture>
+                            <span class="cs-ingredients">
+                                Tangy tomato sauce, stretchy mozzarella cheese, fresh basil
+                            </span>
+                            <span class="cs-alert">
+                                Vegetarian
+                            </span>
+                            <span class="details-price">
+                                $26
+                            </span>
                         </div>
                     </div>
                     <div id="overlay"></div>
@@ -314,74 +362,82 @@
                             $17
                         </span>
                     </h3>
-                    <!-- <p class="cs-item-p">
-                        Al dente penne adorned with creamy spinach, marinated artichokes, and melted mozzarella
-                    </p> -->
                     <button data-detail="#details6" class="open-details-button">View Details</button>
                     <div class="details" id="details6">
                         <div class="details-header">
-                            <div class="title">Ingredients</div>
+                            <span class="title">Chef Special Penne Pasta</span>
                             <button data-close-button class="close">&times;</button>
                         </div>
                         <div class="details-body">
-                            Al dente penne adorned with creamy spinach, marinated artichokes, and melted mozzarella
+                            <picture class="cs-body-picture" aria-hidden="true">
+                                <source media="(max-width: 600px)" srcset="images/special06.jpg">
+                                <source media="(min-width: 601px)" srcset="images/special06.jpg">
+                                <img loading="lazy" decoding="async" src="images/special06.jpg" alt="food" width="160" height="160">
+                            </picture>
+                            <span class="cs-ingredients">
+                                Al dente penne, creamy spinach, marinated artichokes, melted mozzarella
+                            </span>
+                            <span class="cs-alert">
+                                Vegetarian
+                            </span>
+                            <span class="details-price">
+                                $17
+                            </span>
                         </div>
                     </div>
                     <div id="overlay"></div>
                 </div>
             </li>
         </ul>
-        <!-- <a href="" class="cs-button-solid">View Menu</a> -->
     </div>
     <!--Static background is in CSS as a tiled pattern-->
 </section>
                                 
+</section>
+    
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-62">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Reviews</span>
+            <h2 class="cs-title">Customers Feedback</h2>
+            <p class="cs-text">
+                Here's what our customers are saying about us. Read on to discover why they love our food and service!
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-name">Emily</span>
+                <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="images/stars.Webp" alt="rating">
+                <!-- <span class="cs-desc">*****</span> -->
+                <p class="cs-item-text">
+                    Absolutely love the pizzas here! The crust is always perfectly crispy, and the toppings are so fresh and flavorful.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-name">Jamal</span>
+                <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="images/stars.Webp" alt="rating" width="96" height="16">
+                <!-- <span class="cs-desc">Compliment</span> -->
+                <p class="cs-item-text">
+                    Pasta here is top-notch! Cooked perfectly, sauces bursting with flavor.
+                </p>
+            </li>
+            <li class="cs-item">
+                <!-- <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile3.png" alt="profile" width="68" height="68"> -->
+                <span class="cs-name">Sophia</span>
+                <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="images/stars.Webp" alt="rating" width="96" height="16">
+                <!-- <span class="cs-desc">Compliment</span> -->
+                <p class="cs-item-text">
+                    I can't say enough good things about this place. Love everything about this place—cozy vibe, friendly staff, delicious food!
+                </p>
+            </li>
+        </ul>
+        <a aria-label="read more reviews" href="" class="cs-button-solid">Read More</a>
     </div>
 </section>
-     
-<!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-
-    <section id="reviews-62">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Reviews</span>
-                <h2 class="cs-title">Customers Feedback</h2>
-                <p class="cs-text">
-                    Here's what our customers are saying about us. Read on to discover why they love our food and service!
-                </p>
-            </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <span class="cs-name">Emily</span>
-                    <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="images/stars.Webp" alt="rating">
-                    <!-- <span class="cs-desc">*****</span> -->
-                    <p class="cs-item-text">
-                        Absolutely love the pizzas here! The crust is always perfectly crispy, and the toppings are so fresh and flavorful.
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <span class="cs-name">Jamal</span>
-                    <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="images/stars.Webp" alt="rating" width="96" height="16">
-                    <!-- <span class="cs-desc">Compliment</span> -->
-                    <p class="cs-item-text">
-                        Pasta here is top-notch! Cooked perfectly, sauces bursting with flavor.
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <!-- <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile3.png" alt="profile" width="68" height="68"> -->
-                    <span class="cs-name">Sophia</span>
-                    <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="images/stars.Webp" alt="rating" width="96" height="16">
-                    <!-- <span class="cs-desc">Compliment</span> -->
-                    <p class="cs-item-text">
-                        I can't say enough good things about this place. Love everything about this place—cozy vibe, friendly staff, delicious food!
-                    </p>
-                </li>
-            </ul>
-            <a aria-label="read more reviews" href="" class="cs-button-solid">Read More</a>
-        </div>
-    </section>
  
 <!-- ============================================ -->
 <!--                   Footer                     -->
@@ -391,50 +447,7 @@
 
 <footer id="cs-footer-1763">
     <!--Contact Info-->
-    <!-- <div class="cs-card-group">
-        <div class="cs-card">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-location-pin.svg" alt="location" loading="lazy" decoding="async" height="32" width="32">
-            </picture>
-            <div class="cs-flex">
-                <h3 class="cs-h3">Location</h3>
-                <span class="cs-card-info">Shop 8 Labuan St.
-                    Frontline Shopping Complex,
-                    Puckapunyal, VIC, 3662</span>
-            </div>
-        </div>
-        <div class="cs-card">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-clock.svg" alt="clock" loading="lazy" decoding="async" height="32" width="32">
-            </picture>
-            <div class="cs-flex">
-                <h3 class="cs-h3">Working Hours</h3>
-                <span class="cs-card-info">Tuesday - Sunday: 16:30 - 21:00 </span>
-                <span class="cs-card-info">Monday: Closed</span>
-            </div>
-        </div>
-        <div class="cs-card">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-call.svg" alt="phone" loading="lazy" decoding="async" height="32" width="32">
-            </picture>
-            <div class="cs-flex">
-                <h3 class="cs-h3">Contact</h3>
-                <a href="" class="cs-card-info">M: (03) 5793 1035 </a>
-            </div>
-        </div> -->
-        <!-- <img class="cs-graphic cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
-        <img class="cs-graphic cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture-dark.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
-    </div> -->
     <div class="cs-container">
-        <!-- Logo Group -->
-        <!-- <div class="cs-logo-group">
-            <a aria-label="go back to home" class="cs-logo" href="">
-                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="images/website logo Background Removed.png" alt="logo" width="240" height="32">
-            </a>
-            <p class="cs-text">
-                Puckapunyal Pizza and Pasta provides high quality food to soldiers and civilians alike. We are situated on the Puckapunyal Army Base where our drivers ensure your food is delivered piping hot to your door or you can come in and see our friendly team! We create our pizzas and pastas from the freshest ingredients with our own bases and sauces made in-store. 
-            </p>
-        </div> -->
         <!-- Links -->
         <div class="cs-ul-wrapper">
             <span class="cs-header">Our Menu</span>
@@ -468,22 +481,17 @@
             <div class="cs-contact-info">
                 <span class="cs-topper">Contact</span>
                 <span class="cs-contact-details">(03) 5793 1035</span>
-                <!-- <a href="" class="cs-contact-link">(03) 5793 1035</a> -->
             </div>
             <div class="cs-contact-info">
                 <span class="cs-topper">Location</span>
                 <span class="cs-contact-details">Shop 8 Labuan St.
                     Frontline Shopping Complex,
                     Puckapunyal, VIC, 3662</span>
-                <!-- <a href="" class="cs-contact-link">Shop 8 Labuan St.
-                    Frontline Shopping Complex,
-                    Puckapunyal, VIC, 3662</a> -->
             </div>
             <div class="cs-contact-info">
                 <span class="cs-topper">Working Hours</span>
                 <span class="cs-contact-details">Tuesday - Sunday: 16:30 - 21:00</span><br>
                 <span class="cs-contact-details">Monday: closed</span>
-                <!-- <a href="" class="cs-contact-link">Tuesday - Sunday: 16:30 - 21:00</a> -->
             </div>
         </div>
     </div>
