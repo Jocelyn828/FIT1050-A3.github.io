@@ -1353,7 +1353,7 @@ body {
     line-height: 1.5em;
     /* 16px - 24px */
     margin: 0 0 clamp(1rem, 4vw, 1.5rem) 0;
-    color: var(--headerColor);
+    color: var(--primary);
     display: block;
     position: relative;
   }
