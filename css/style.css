@@ -1026,6 +1026,7 @@ body {
       /* prevents padding from adding to the width */
       box-sizing: border-box;
       border: none;
+      font-family: "Poetsen One", cursive, Arial, sans-serif;
   }
 
   #menu-1001 .open-details-button:hover{
