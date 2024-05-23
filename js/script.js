@@ -31,35 +31,36 @@ for (const item of dropDowns) {
 	};
 	item.addEventListener('click', onClick);
 }
-          
-const openDetailsButton = document.querySelectorAll('[data-detail]');
-const closeDetailsButton = document.querySelectorAll('[data-close-button]');
+     
+// menu js
+const openDetailButton = document.querySelectorAll('[data-detail]');
+const closeDetailButton = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
 
-openDetailsButton.forEach(button => {
+openDetailButton.forEach(button => {
 	button.addEventListener('click', () => {
 		const details = document.querySelector(button.dataset.detail)
-		openDetails(details)
+		openDetail(details)
 	})
 })
 
 overlay.addEventListener('click', () => {
 	const details = document.querySelectorAll('.details.active')
-	details.forEach(details => {
-		closeDetails(details)
+	details.forEach(detail => {
+		closeDetail(detail)
 	})
 })
 
-closeDetailsButton.forEach(button => {
+closeDetailButton.forEach(button => {
 	button.addEventListener('click', () => {
 		const details = button.closest('.details')
-		closeDetails(details)
+		closeDetail(details)
 	})
 })
 
-function openDetails(details) {
-	if (details == null) return
-	details.classList.add('active')
+function openDetail(detail) {
+	if (detail == null) return
+	detail.classList.add('active')
 	overlay.classList.add('active')
 	document.body.classList.add('no-scroll');
 	
@@ -68,13 +69,37 @@ function openDetails(details) {
     if (menuSection) {
         menuSection.scrollIntoView({ behavior: 'smooth' });
     }
+	document.addEventListener('keydown', trapFocus);
 
 }
 
-function closeDetails(details) {
-	if (details == null) return
-	details.classList.remove('active')
+function closeDetail(detail) {
+	if (detail == null) return
+	detail.classList.remove('active')
 	overlay.classList.remove('active')
 	document.body.classList.remove('no-scroll');
+	document.removeEventListener('keydown', trapFocus);
 
+}
+
+function trapFocus(e) {
+	const modals = document.querySelectorAll('.details.active');
+	if (modals.length === 0) return;
+
+	const modal = modals[0];
+	const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+	const closeElement = focusableElements[0];
+
+	// Tab key
+	if (e.key === 'Tab' || e.keyCode === 9) {
+		closeElement.focus();
+		e.preventDefault();
+	}
+
+	// Escape key
+	if (e.key === 'Escape' || e.keyCode === 27) { 
+		modals.forEach(details => {
+			closeDetail(details)
+		})
+	}
 }
