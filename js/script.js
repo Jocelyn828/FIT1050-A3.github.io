@@ -32,7 +32,7 @@ for (const item of dropDowns) {
 	item.addEventListener('click', onClick);
 }
      
-// menu js
+// menu modal code
 const openDetailButton = document.querySelectorAll('[data-detail]');
 const closeDetailButton = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
