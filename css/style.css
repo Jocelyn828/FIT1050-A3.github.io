@@ -762,18 +762,14 @@ h1, h2, h3, h4, h5, h6 {
       padding: var(--sectionPadding);
       position: relative;
       z-index: 1;
+      padding-top: clamp(1.875rem, 5vw, 3.125rem);
   }
   #menu-1001:before {
       /* static tiled pattern */
       content: "";
       height: 100%;
       width: 100%;
-      opacity: 0.08;
-      background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/static-pattern.png");
-      background-size: auto;
-      background-position: center;
-      background-repeat: repeat;
-      display: block;
+      background-color: #f7f7f7;
       position: absolute;
       top: 0;
       left: 0;
